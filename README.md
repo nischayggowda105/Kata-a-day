@@ -8,7 +8,7 @@ I have taken a challenge to solve 1 Kata everyday from CodeWars. I will be stori
 |    Programming Language  |    Kata Count  | 
 |----------|:-------------:|
 | [Python](https://github.com/nischayggowda105/Kata-a-day/tree/main/Python) | 1 | 
-| [MySQL](https://github.com/nischayggowda105/Kata-a-day/tree/main/MySQL) | 0 |
+| [MySQL](https://github.com/nischayggowda105/Kata-a-day/tree/main/MySQL) | 1 |
 
 
 
