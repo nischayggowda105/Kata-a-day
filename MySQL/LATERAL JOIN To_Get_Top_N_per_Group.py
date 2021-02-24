@@ -32,7 +32,12 @@ Desired Output
   5           | art      | Second most viewed post about Art | 9234  | 712
   2           | business | NULL                              | NULL  | NULL
   7           | sport    | Most viewed post about Sport      | 10    | 126
- 
+
+category_id - category id
+category - category name
+title - post title
+views - the number of post views
+post_id - post id
 
 
 # -- Replace with your SQL query 
@@ -49,12 +54,4 @@ LEFT JOIN LATERAL(
   
 ORDER BY category, views DESC, post_id;
 
-  
-  
-  
-category_id - category id
-category - category name
-title - post title
-views - the number of post views
-post_id - post id
-
+ 
