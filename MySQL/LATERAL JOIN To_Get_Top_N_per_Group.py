@@ -1,4 +1,4 @@
-
+'''
 Order the result set by:
   category name alphabetically
   number of post views largest to lowest
@@ -8,14 +8,15 @@ Note:
 Some categories may have less than two or no posts at all.
 Two or more posts within the category can be tied by (have the same) the number of views. Use post id as a tie breaker - a post with a lower id gets a higher rank.
 
-Schema
-  categories
+Schema -
+
+categories
    Column     | Type                        | Modifiers
   ------------+-----------------------------+----------
   id          | integer                     | not null
   category    | character varying(255)      | not null
   
-  posts
+posts
      Column     | Type                        | Modifiers
     ------------+-----------------------------+----------
   id          | integer                     | not null
@@ -38,7 +39,7 @@ category - category name
 title - post title
 views - the number of post views
 post_id - post id
-
+'''
 
 # -- Replace with your SQL query 
 SELECT C.id category_id, C.category, P.title, P.views, P.id AS post_id
