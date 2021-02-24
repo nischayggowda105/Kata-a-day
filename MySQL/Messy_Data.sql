@@ -37,13 +37,13 @@ SELECT c.first_name
      , c.last_name
      , c.credit_limit as old_limit
      , max(p.credit_limit) as new_limit
-  FROM customers c
+FROM customers c
      , prospects p
- WHERE upper(c.first_name) || ' ' || upper(c.last_name) = upper(p.full_name)
+WHERE upper(c.first_name) || ' ' || upper(c.last_name) = upper(p.full_name)
     OR upper(c.Last_name) || ', ' || upper(c.first_name) = upper(p.full_name)
- GROUP BY c.first_name, c.last_name, c.credit_limit
+GROUP BY c.first_name, c.last_name, c.credit_limit
 HAVING max(p.credit_limit) > c.credit_limit
- ORDER BY c.first_name, c.last_name;
+ORDER BY c.first_name, c.last_name;
  
  
  
