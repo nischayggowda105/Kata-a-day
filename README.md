@@ -13,4 +13,4 @@ I have taken a challenge to solve 1 Kata everyday from CodeWars. I will be stori
 
 
 
-My CodeWars profile : [Nischay Gowda](https://www.codewars.com/users/Nischay)
+My CodeWars profile : [Nischay Gowda](https://www.codewars.com/users/Nischay%20)
