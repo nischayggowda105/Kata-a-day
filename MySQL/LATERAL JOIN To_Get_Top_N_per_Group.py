@@ -1,4 +1,4 @@
-'''
+
 Order the result set by:
   category name alphabetically
   number of post views largest to lowest
@@ -32,7 +32,25 @@ Desired Output
   5           | art      | Second most viewed post about Art | 9234  | 712
   2           | business | NULL                              | NULL  | NULL
   7           | sport    | Most viewed post about Sport      | 10    | 126
-  ...
+ 
+
+
+# -- Replace with your SQL query 
+SELECT C.id category_id, C.category, P.title, P.views, P.id AS post_id
+FROM categories AS C
+LEFT JOIN LATERAL(
+  
+  -- arrange the posts table to get top2 posts of views. 
+  SELECT title, views, id
+  FROM posts
+  WHERE category_id = C.id
+  ORDER BY views DESC
+  LIMIT 2) AS P ON TRUE
+  
+ORDER BY category, views DESC, post_id;
+
+  
+  
   
 category_id - category id
 category - category name
@@ -40,4 +58,3 @@ title - post title
 views - the number of post views
 post_id - post id
 
-'''
